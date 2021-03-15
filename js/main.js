@@ -17,8 +17,7 @@ nameArr.splice(1, 3);
 console.log(nameArr); */
 
 // ! OBJECT
-
-var info = {
+/* var info = {
   fName: 'SABBIR',
   sName: 'AHMED',
   age: 29,
@@ -29,4 +28,9 @@ var info = {
 
 console.log(info.age);
 console.log(info['fName']);
-info.myFunc();
+info.myFunc(); */
+
+//! FUNCTION
+let A = 10;
+let B = 20;
+
