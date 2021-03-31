@@ -1,4 +1,3 @@
-
 /* let nameArr = ["A", "B", "C", "D", "E", "F", 9, 10];
 
 nameArr.push("AAA");
@@ -31,6 +30,16 @@ console.log(info['fName']);
 info.myFunc(); */
 
 //! FUNCTION
-let A = 10;
-let B = 20;
 
+function myFunc() {
+  console.log("This is a Function call");
+}
+
+myFunc();
+
+function sum(a, b) {
+  let sum = a + b;
+  return sum;
+}
+
+console.log(sum(4, 4));
