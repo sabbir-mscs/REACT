@@ -31,7 +31,7 @@ info.myFunc(); */
 
 //! FUNCTION
 
-function myFunc() {
+/* function myFunc() {
   console.log("This is a Function call");
 }
 
@@ -43,3 +43,21 @@ function sum(a, b) {
 }
 
 console.log(sum(4, 4));
+
+ */
+
+//! This Keyword
+//method -> obj
+//function -> global (window,global)
+
+const video = {
+  title: "a",
+  tags: ["a", "b", "c", "d"],
+  showTags() {
+    this.tags.forEach(function (tag) {
+      console.log(this ,tag);
+    });
+  },
+};
+
+video.showTags();
