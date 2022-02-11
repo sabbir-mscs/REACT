@@ -1,8 +1,23 @@
+import { useHistory } from "react-router-dom";
 import NewMeetupForm from "../components/meetups/NewMeetupForm";
 
-function Favourites() {
+function NewMeetupPage() {
+  const history = useHistory();
+
   function addMeetupHandler(meetupData) {
     //https://advance-react-back-default-rtdb.firebaseio.com/
+    fetch(
+      "https://advance-react-back-default-rtdb.firebaseio.com/meetups.json",
+      {
+        method: "POST",
+        body: JSON.stringify(meetupData),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    ).then(() => {
+      history.replace("/");
+    });
   }
   return (
     <section>
@@ -12,4 +27,4 @@ function Favourites() {
   );
 }
 
-export default Favourites;
+export default NewMeetupPage;
