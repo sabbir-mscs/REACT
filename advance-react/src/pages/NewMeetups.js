@@ -6,9 +6,6 @@ function NewMeetupPage() {
 
   function addMeetupHandler(meetupData) {
     //https://advance-react-back-default-rtdb.firebaseio.com/
-<<<<<<< HEAD
-    fetch("https://advance-react-back-default-rtdb.firebaseio.com/meetups");
-=======
     fetch(
       "https://advance-react-back-default-rtdb.firebaseio.com/meetups.json",
       {
@@ -21,7 +18,6 @@ function NewMeetupPage() {
     ).then(() => {
       history.replace("/");
     });
->>>>>>> 201b4236c6ecec43f22632be79c20721953fb9ea
   }
   return (
     <section>
