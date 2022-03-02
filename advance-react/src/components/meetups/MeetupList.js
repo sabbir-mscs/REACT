@@ -11,7 +11,7 @@ function MeetupList(props) {
           image={meetup.image}
           title={meetup.title}
           address={meetup.address}
-          descriptopm={meetup.descriptopm}
+          descriptopm={meetup.descriptopn}
         />
       ))}
     </ul>
