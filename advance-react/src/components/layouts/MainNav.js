@@ -5,8 +5,7 @@ import FavoritesContext from "../../store/favorites-context";
 import classes from "./MainNav.module.css";
 
 function MainNavigation() {
-
-  const favoritesCtx = useContext(FavoritesContext)
+  const favoritesCtx = useContext(FavoritesContext);
 
   return (
     <header className={classes.header}>
@@ -20,7 +19,12 @@ function MainNavigation() {
             <Link to="/new-meetups">Add New Meetup</Link>
           </li>
           <li>
-            <Link to="/favuorites">My Favorites <span>{favoritesCtx.totalFavorites</span></Link>
+            <Link to="/favuorites">
+              My Favorites{" "}
+              <span className={classes.badge}>
+                {favoritesCtx.totalFavorites}
+              </span>{" "}
+            </Link>
           </li>
         </ul>
       </nav>
